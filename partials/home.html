@@ -1,0 +1,13 @@
+<h2>Welcome Home!</h2>
+<p>You are: <input type="text" ng-model="name" placeholder="Enter name here"></p>
+<h1>Hello {{name}}!!!</h1>
+<p>You have to observe the following things, for sure</p>
+<ul>
+	<li>the <code>index.html</code> seems quite empty, so where is the content coming from?</li>
+	<li>where is the content being injected to, in <code>index.html?</code></li>
+	<li>how the state is varying according to the url?</li>
+	<li>is there anything special about the <code>add</code> state? about the place where it is rendered?</li>
+	<li><code>room</code> and <code>rooms</code> are different states</li>
+	<li>there is only a single state defined for <code>room</code>, still we are able to view each room individually. how?</li>
+	<li>If you're curious, go to <code>angular/services/authStorageAccess.js</code> line 16, and make <code>enableEncrypt = true</code> as the default value, delete the browser data(<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>del</kbd> in chrome), reload the app and observe the local storage from console. </li>
+</ul>
